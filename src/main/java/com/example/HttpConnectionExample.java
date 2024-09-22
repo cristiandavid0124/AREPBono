@@ -1,9 +1,12 @@
+
 package com.example;
 
-
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+
 
 public class HttpConnectionExample {
 
@@ -33,15 +36,13 @@ public class HttpConnectionExample {
                 response.append(inputLine);
             }
             in.close();
-
-            // print result
             responseStr = response.toString();
-            System.out.println(responseStr);
+            
         } else {
             System.out.println("GET request not worked");
         }
         System.out.println("GET DONE");
         return responseStr;
-    }
 
+    }
 }
