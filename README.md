@@ -16,11 +16,11 @@ mvn clean install
 3.  ejecuta el codigo en terminales separadas 
 
  ```
-java -cp target/classes com.example.CalcreflexBEServer
+mvn exec:java -Pserver
  ```
 
 ```
-java -cp target/classes com.example.CalcreflexBEFachada
+mvn exec:java -Pfachada
 ```
 
  ## Arquitectura
